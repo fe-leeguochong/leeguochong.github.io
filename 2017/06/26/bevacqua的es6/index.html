@@ -6,18 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>让div出现横向滚动条 | 李国冲博客</title>
+  <title>李国冲博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="通常情况下，我们在写页面的过程中，会出现推送文章或者商品之类的情形，这个时候为了方便读者或者客户更好的体验，横向滑动是一个非常不错的选择。现在我就讲一下我的方法是外面一个大盒子，然后在里面装进ul就可以了。这里要着重强调三点1.最外面大盒子div一定要设置宽和高，不然就会被子元素撑开，添加overflow：hidden,后面看原因 2.中间的盒子也就是ul，特别特别要注意的。首先一定要设置高度，这">
+  <meta name="description" content="ES6 Overview in 350 Bullet PointsMy ES6 in Depth series consists of 24 articles covering most syntax changes and features coming in ES6. This article aims to summarize all of those, providing you with">
 <meta property="og:type" content="article">
-<meta property="og:title" content="让div出现横向滚动条">
-<meta property="og:url" content="http://yoursite.com/2017/06/22/让div出现横向滚动条/index.html">
+<meta property="og:title" content="李国冲博客">
+<meta property="og:url" content="http://yoursite.com/2017/06/26/bevacqua的es6/index.html">
 <meta property="og:site_name" content="李国冲博客">
-<meta property="og:description" content="通常情况下，我们在写页面的过程中，会出现推送文章或者商品之类的情形，这个时候为了方便读者或者客户更好的体验，横向滑动是一个非常不错的选择。现在我就讲一下我的方法是外面一个大盒子，然后在里面装进ul就可以了。这里要着重强调三点1.最外面大盒子div一定要设置宽和高，不然就会被子元素撑开，添加overflow：hidden,后面看原因 2.中间的盒子也就是ul，特别特别要注意的。首先一定要设置高度，这">
-<meta property="og:updated_time" content="2017-06-22T10:08:38.589Z">
+<meta property="og:description" content="ES6 Overview in 350 Bullet PointsMy ES6 in Depth series consists of 24 articles covering most syntax changes and features coming in ES6. This article aims to summarize all of those, providing you with">
+<meta property="og:image" content="https://i.imgur.com/tbKTICw.png">
+<meta property="og:updated_time" content="2017-06-26T01:55:38.551Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="让div出现横向滚动条">
-<meta name="twitter:description" content="通常情况下，我们在写页面的过程中，会出现推送文章或者商品之类的情形，这个时候为了方便读者或者客户更好的体验，横向滑动是一个非常不错的选择。现在我就讲一下我的方法是外面一个大盒子，然后在里面装进ul就可以了。这里要着重强调三点1.最外面大盒子div一定要设置宽和高，不然就会被子元素撑开，添加overflow：hidden,后面看原因 2.中间的盒子也就是ul，特别特别要注意的。首先一定要设置高度，这">
+<meta name="twitter:title" content="李国冲博客">
+<meta name="twitter:description" content="ES6 Overview in 350 Bullet PointsMy ES6 in Depth series consists of 24 articles covering most syntax changes and features coming in ES6. This article aims to summarize all of those, providing you with">
+<meta name="twitter:image" content="https://i.imgur.com/tbKTICw.png">
   
     <link rel="alternative" href="/atom.xml" title="李国冲博客" type="application/atom+xml">
   
@@ -155,31 +157,497 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-让div出现横向滚动条" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-bevacqua的es6" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 class="article-title" itemprop="name">
-      让div出现横向滚动条
-    </h1>
-  
-
-        
-        <a href="/2017/06/22/让div出现横向滚动条/" class="archive-article-date">
-  	<time datetime="2017-06-22T08:50:23.837Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-06-22</time>
-</a>
-        
-      </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="通常情况下，我们在写页面的过程中，会出现推送文章或者商品之类的情形，这个时候为了方便读者或者客户更好的体验，横向滑动是一个非常不错的选择。现在我就讲一下"><a href="#通常情况下，我们在写页面的过程中，会出现推送文章或者商品之类的情形，这个时候为了方便读者或者客户更好的体验，横向滑动是一个非常不错的选择。现在我就讲一下" class="headerlink" title="通常情况下，我们在写页面的过程中，会出现推送文章或者商品之类的情形，这个时候为了方便读者或者客户更好的体验，横向滑动是一个非常不错的选择。现在我就讲一下"></a>通常情况下，我们在写页面的过程中，会出现推送文章或者商品之类的情形，这个时候为了方便读者或者客户更好的体验，横向滑动是一个非常不错的选择。现在我就讲一下</h2><h3 id="我的方法是外面一个大盒子，然后在里面装进ul就可以了。"><a href="#我的方法是外面一个大盒子，然后在里面装进ul就可以了。" class="headerlink" title="我的方法是外面一个大盒子，然后在里面装进ul就可以了。"></a>我的方法是外面一个大盒子，然后在里面装进ul就可以了。</h3><h4 id="这里要着重强调三点"><a href="#这里要着重强调三点" class="headerlink" title="这里要着重强调三点"></a>这里要着重强调三点</h4><pre><code>1.最外面大盒子div一定要设置宽和高，不然就会被子元素撑开，添加overflow：hidden,后面看原因
-2.中间的盒子也就是ul，特别特别要注意的。首先一定要设置高度，这个高度要比父级盒子高度要高一些，因为要把出现的横向滚动条遮盖住，不然后面出现的滚动条就不知道怎么遮盖掉。然后再设置必不可少的css，分别为overflow-x: auto; overflow-y: hidden; white-space: nowrap;最后一个一定要加上不然子集li会竖着排下去。
-3.最后就是li标签了，这个好像没有什么要求了，一直排下去就行
-</code></pre><h5 id="现在给你们看代码啦"><a href="#现在给你们看代码啦" class="headerlink" title="现在给你们看代码啦"></a>现在给你们看代码啦</h5><pre><code><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">&lt;div class=&quot;box&quot;&gt;</div><div class="line">    &lt;ul&gt;</div><div class="line">        &lt;li&gt;&lt;/li&gt;</div><div class="line">        &lt;li&gt;&lt;/li&gt;</div><div class="line">        &lt;li&gt;&lt;/li&gt;</div><div class="line">        &lt;li&gt;&lt;/li&gt;</div><div class="line">    &lt;/ul&gt;</div><div class="line">&lt;/div&gt;</div></pre></td></tr></table></figure>
-</code></pre><h1 id="好了就这么多"><a href="#好了就这么多" class="headerlink" title="好了就这么多"></a>好了就这么多</h1>
+        <h1 id="ES6-Overview-in-350-Bullet-Points"><a href="#ES6-Overview-in-350-Bullet-Points" class="headerlink" title="ES6 Overview in 350 Bullet Points"></a>ES6 Overview in 350 Bullet Points</h1><p>My <a href="https://ponyfoo.com/articles/tagged/es6-in-depth" title="ES6 in Depth on Pony Foo" target="_blank" rel="external">ES6 in Depth</a> series consists of 24 articles covering most syntax changes and features coming in ES6. This article aims to summarize all of those, providing you with practical insight into most of ES6, so that you can quickly get started. I’ve also linked to the articles in ES6 in Depth so that you can easily go deeper on any topic you’re interested in.</p>
+<p>I heard you like bullet points, so I made an article containing hundreds of those bad boys. To kick things off, here’s a table of contents with all the topics covered. It has bullet points in it – <strong>obviously</strong>. Note that if you want these concepts to permeate your brain, you’ll have a much better time learning the subject by going through the <a href="https://ponyfoo.com/articles/tagged/es6-in-depth" title="ES6 in Depth on Pony Foo" target="_blank" rel="external">in-depth series</a> and playing around, experimenting with ES6 code yourself.</p>
+<p><img src="https://i.imgur.com/tbKTICw.png" alt="It&#39;s showtime!"></p>
+<h1 id="Table-of-Contents"><a href="#Table-of-Contents" class="headerlink" title="Table of Contents"></a>Table of Contents</h1><ul>
+<li><a href="#introduction">Introduction</a></li>
+<li><a href="#tooling">Tooling</a></li>
+<li><a href="#assignment-destructuring">Assignment Destructuring</a></li>
+<li><a href="#spread-operator-and-rest-parameters">Spread Operator and Rest Parameters</a></li>
+<li><a href="#arrow-functions">Arrow Functions</a></li>
+<li><a href="#template-literals">Template Literals</a></li>
+<li><a href="#object-literals">Object Literals</a></li>
+<li><a href="#classes">Classes</a></li>
+<li><a href="#let-and-const">Let and Const</a></li>
+<li><a href="#symbols">Symbols</a></li>
+<li><a href="#iterators">Iterators</a></li>
+<li><a href="#generators">Generators</a></li>
+<li><a href="#promises">Promises</a></li>
+<li><a href="#maps">Maps</a></li>
+<li><a href="#weakmaps">WeakMaps</a></li>
+<li><a href="#sets">Sets</a></li>
+<li><a href="#weaksets">WeakSets</a></li>
+<li><a href="#proxies">Proxies</a></li>
+<li><a href="#reflection">Reflection</a></li>
+<li><a href="#number"><code>Number</code></a></li>
+<li><a href="#math"><code>Math</code></a></li>
+<li><a href="#array"><code>Array</code></a></li>
+<li><a href="#object"><code>Object</code></a></li>
+<li><a href="#strings-and-unicode">Strings and Unicode</a></li>
+<li><a href="#modules">Modules</a></li>
+</ul>
+<p>Apologies about that long table of contents, and here we go.</p>
+<h1 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h1><ul>
+<li>ES6 – also known as Harmony, <code>es-next</code>, ES2015 – is the latest finalized specification of the language</li>
+<li>The ES6 specification was finalized in <strong>June 2015</strong>, <em>(hence ES2015)</em></li>
+<li>Future versions of the specification will follow the <code>ES[YYYY]</code> pattern, e.g ES2016 for ES7<ul>
+<li><strong>Yearly release schedule</strong>, features that don’t make the cut take the next train</li>
+<li>Since ES6 pre-dates that decision, most of us still call it ES6</li>
+<li>Starting with ES2016 (ES7), we should start using the <code>ES[YYYY]</code> pattern to refer to newer versions</li>
+<li>Top reason for naming scheme is to pressure browser vendors into quickly implementing newest features</li>
+</ul>
+</li>
+</ul>
+<p><sup><a href="#table-of-contents">(back to table of contents)</a></sup></p>
+<h1 id="Tooling"><a href="#Tooling" class="headerlink" title="Tooling"></a>Tooling</h1><ul>
+<li>To get ES6 working today, you need a <strong>JavaScript-to-JavaScript</strong> <em>transpiler</em></li>
+<li>Transpilers are here to stay<ul>
+<li>They allow you to compile code in the latest version into older versions of the language</li>
+<li>As browser support gets better, we’ll transpile ES2016 and ES2017 into ES6 and beyond</li>
+<li>We’ll need better source mapping functionality</li>
+<li>They’re the most reliable way to run ES6 source code in production today <em>(although browsers get ES5)</em></li>
+</ul>
+</li>
+<li>Babel <em>(a transpiler)</em> has a killer feature: <strong>human-readable output</strong></li>
+<li>Use <a href="http://babeljs.io/" title="Babel JavaScript Compiler" target="_blank" rel="external"><code>babel</code></a> to transpile ES6 into ES5 for static builds</li>
+<li>Use <a href="https://github.com/babel/babelify" title="babel/babelify on GitHub" target="_blank" rel="external"><code>babelify</code></a> to incorporate <code>babel</code> into your <a href="https://ponyfoo.com/articles/gulp-grunt-whatever" title="Gulp, Grunt, Whatever on Pony Foo" target="_blank" rel="external">Gulp, Grunt, or <code>npm run</code></a> build process</li>
+<li>Use Node.js <code>v4.x.x</code> or greater as they have decent ES6 support baked in, thanks to <code>v8</code></li>
+<li>Use <code>babel-node</code> with any version of <code>node</code>, as it transpiles modules into ES5</li>
+<li>Babel has a thriving ecosystem that already supports some of ES2016 and has plugin support</li>
+<li>Read <a href="https://ponyfoo.com/articles/a-brief-history-of-es6-tooling" title="A Brief History of ES6 Tooling on Pony Foo" target="_blank" rel="external">A Brief History of ES6 Tooling</a></li>
+</ul>
+<p><sup><a href="#table-of-contents">(back to table of contents)</a></sup></p>
+<h1 id="Assignment-Destructuring"><a href="#Assignment-Destructuring" class="headerlink" title="Assignment Destructuring"></a>Assignment Destructuring</h1><ul>
+<li><code>var {foo} = pony</code> is equivalent to <code>var foo = pony.foo</code></li>
+<li><code>var {foo: baz} = pony</code> is equivalent to <code>var baz = pony.foo</code></li>
+<li>You can provide default values, <code>var {foo=&#39;bar&#39;} = baz</code> yields <code>foo: &#39;bar&#39;</code> if <code>baz.foo</code> is <code>undefined</code></li>
+<li>You can pull as many properties as you like, aliased or not<ul>
+<li><code>var {foo, bar: baz} = {foo: 0, bar: 1}</code> gets you <code>foo: 0</code> and <code>baz: 1</code></li>
+</ul>
+</li>
+<li>You can go deeper. <code>var {foo: {bar}} = { foo: { bar: &#39;baz&#39; } }</code> gets you <code>bar: &#39;baz&#39;</code></li>
+<li>You can alias that too. <code>var {foo: {bar: deep}} = { foo: { bar: &#39;baz&#39; } }</code> gets you <code>deep: &#39;baz&#39;</code></li>
+<li>Properties that aren’t found yield <code>undefined</code> as usual, e.g: <code>var {foo} = {}</code></li>
+<li>Deeply nested properties that aren’t found yield an error, e.g: <code>var {foo: {bar}} = {}</code></li>
+<li>It also works for arrays, <code>var [a, b] = [0, 1]</code> yields <code>a: 0</code> and <code>b: 1</code></li>
+<li>You can skip items in an array, <code>var [a, , b] = [0, 1, 2]</code>, getting <code>a: 0</code> and <code>b: 2</code></li>
+<li>You can swap without an <em>“aux”</em> variable, <code>[a, b] = [b, a]</code></li>
+<li>You can also use destructuring in function parameters<ul>
+<li>Assign default values like <code>function foo (bar=2) {}</code></li>
+<li>Those defaults can be objects, too <code>function foo (bar={ a: 1, b: 2 }) {}</code></li>
+<li>Destructure <code>bar</code> completely, like <code>function foo ({ a=1, b=2 }) {}</code></li>
+<li>Default to an empty object if nothing is provided,  like <code>function foo ({ a=1, b=2 } = {}) {}</code></li>
+</ul>
+</li>
+<li>Read <a href="https://ponyfoo.com/articles/es6-destructuring-in-depth" title="ES6 Destructuring in Depth on Pony Foo" target="_blank" rel="external">ES6 JavaScript Destructuring in Depth</a></li>
+</ul>
+<p><sup><a href="#table-of-contents">(back to table of contents)</a></sup></p>
+<h1 id="Spread-Operator-and-Rest-Parameters"><a href="#Spread-Operator-and-Rest-Parameters" class="headerlink" title="Spread Operator and Rest Parameters"></a>Spread Operator and Rest Parameters</h1><ul>
+<li>Rest parameters is a better <code>arguments</code><ul>
+<li>You declare it in the method signature like <code>function foo (...everything) {}</code></li>
+<li><code>everything</code> is an array with all parameters passed to <code>foo</code></li>
+<li>You can name a few parameters before <code>...everything</code>, like <code>function foo (bar, ...rest) {}</code></li>
+<li>Named parameters are excluded from <code>...rest</code></li>
+<li><code>...rest</code> must be the last parameter in the list</li>
+</ul>
+</li>
+<li>Spread operator is better than magic, also denoted with <code>...</code> syntax<ul>
+<li>Avoids <code>.apply</code> when calling methods, <code>fn(...[1, 2, 3])</code> is equivalent to <code>fn(1, 2, 3)</code></li>
+<li>Easier concatenation <code>[1, 2, ...[3, 4, 5], 6, 7]</code></li>
+<li>Casts array-likes or iterables into an array, e.g <code>[...document.querySelectorAll(&#39;img&#39;)]</code></li>
+<li>Useful when <a href="#assignment-destructuring">destructuring</a> too, <code>[a, , ...rest] = [1, 2, 3, 4, 5]</code> yields <code>a: 1</code> and <code>rest: [3, 4, 5]</code></li>
+<li>Makes <code>new</code> + <code>.apply</code> effortless, <code>new Date(...[2015, 31, 8])</code></li>
+</ul>
+</li>
+<li>Read <a href="https://ponyfoo.com/articles/es6-spread-and-butter-in-depth" title="ES6 Spread and Butter on Pony Foo" target="_blank" rel="external">ES6 Spread and Butter in Depth</a></li>
+</ul>
+<p><sup><a href="#table-of-contents">(back to table of contents)</a></sup></p>
+<h1 id="Arrow-Functions"><a href="#Arrow-Functions" class="headerlink" title="Arrow Functions"></a>Arrow Functions</h1><ul>
+<li>Terse way to declare a function like <code>param =&gt; returnValue</code></li>
+<li>Useful when doing functional stuff like <code>[1, 2].map(x =&gt; x * 2)</code></li>
+<li>Several flavors are available, might take you some getting used to<ul>
+<li><code>p1 =&gt; expr</code> is okay for a single parameter</li>
+<li><code>p1 =&gt; expr</code> has an implicit <code>return</code> statement for the provided <code>expr</code> expression</li>
+<li>To return an object implicitly, wrap it in parenthesis <code>() =&gt; ({ foo: &#39;bar&#39; })</code> or you’ll get <strong>an error</strong></li>
+<li>Parenthesis are demanded when you have zero, two, or more parameters, <code>() =&gt; expr</code> or <code>(p1, p2) =&gt; expr</code></li>
+<li>Brackets in the right-hand side represent a code block that can have multiple statements, <code>() =&gt; {}</code></li>
+<li>When using a code block, there’s no implicit <code>return</code>, you’ll have to provide it – <code>() =&gt; { return &#39;foo&#39; }</code></li>
+</ul>
+</li>
+<li>You can’t name arrow functions statically, but runtimes are now much better at inferring names for most methods</li>
+<li>Arrow functions are bound to their lexical scope<ul>
+<li><code>this</code> is the same <code>this</code> context as in the parent scope</li>
+<li><code>this</code> can’t be modified with <code>.call</code>, <code>.apply</code>, or similar <em>“reflection”-type</em> methods</li>
+<li><code>arguments</code> is also lexically scoped to the nearest normal function; use <code>(...args)</code> for local arguments</li>
+</ul>
+</li>
+<li>Read <a href="https://ponyfoo.com/articles/es6-arrow-functions-in-depth" title="ES6 Arrow Functions on Pony Foo" target="_blank" rel="external">ES6 Arrow Functions in Depth</a></li>
+</ul>
+<p><sup><a href="#table-of-contents">(back to table of contents)</a></sup></p>
+<h1 id="Template-Literals"><a href="#Template-Literals" class="headerlink" title="Template Literals"></a>Template Literals</h1><ul>
+<li>You can declare strings with <code>` </code> (backticks), in addition to <code>&quot;</code> and <code>&#39;</code></li>
+<li>Strings wrapped in backticks are <em>template literals</em></li>
+<li>Template literals can be multiline</li>
+<li>Template literals allow interpolation like <code>`ponyfoo.com is ${rating}` </code> where <code>rating</code> is a variable</li>
+<li>You can use any valid JavaScript expressions in the interpolation, such as <code>`${2 * 3}` </code> or <code>`${foo()}` </code></li>
+<li>You can use tagged templates to change how expressions are interpolated<ul>
+<li>Add a <code>fn</code> prefix to <code>fn`foo, ${bar} and ${baz}` </code></li>
+<li><code>fn</code> is called once with <code>template, ...expressions</code></li>
+<li><code>template</code> is <code>[&#39;foo, &#39;, &#39; and &#39;, &#39;&#39;]</code> and <code>expressions</code> is <code>[bar, baz]</code></li>
+<li>The result of <code>fn</code> becomes the value of the template literal</li>
+<li>Possible use cases include input sanitization of expressions, parameter parsing, etc.</li>
+</ul>
+</li>
+<li>Template literals are almost strictly better than strings wrapped in single or double quotes</li>
+<li>Read <a href="https://ponyfoo.com/articles/es6-template-strings-in-depth" title="ES6 Template Literals on Pony Foo" target="_blank" rel="external">ES6 Template Literals in Depth</a></li>
+</ul>
+<p><sup><a href="#table-of-contents">(back to table of contents)</a></sup></p>
+<h1 id="Object-Literals"><a href="#Object-Literals" class="headerlink" title="Object Literals"></a>Object Literals</h1><ul>
+<li>Instead of <code>{ foo: foo }</code>, you can just do <code>{ foo }</code> – known as a <em>property value shorthand</em></li>
+<li>Computed property names, <code>{ [prefix + &#39;Foo&#39;]: &#39;bar&#39;  }</code>, where <code>prefix: &#39;moz&#39;</code>, yields <code>{ mozFoo: &#39;bar&#39; }</code></li>
+<li>You can’t combine computed property names and property value shorthands, <code>{ [foo] }</code> is invalid</li>
+<li>Method definitions in an object literal can be declared using an alternative, more terse syntax, <code>{ foo () {} }</code></li>
+<li>See also <a href="#object"><code>Object</code></a> section</li>
+<li>Read <a href="https://ponyfoo.com/articles/es6-object-literal-features-in-depth" title="ES6 Object Literal Features in Depth on Pony Foo" target="_blank" rel="external">ES6 Object Literal Features in Depth</a></li>
+</ul>
+<p><sup><a href="#table-of-contents">(back to table of contents)</a></sup></p>
+<h1 id="Classes"><a href="#Classes" class="headerlink" title="Classes"></a>Classes</h1><ul>
+<li>Not <em>“traditional”</em> classes, syntax sugar on top of prototypal inheritance</li>
+<li>Syntax similar to declaring objects, <code>class Foo {}</code></li>
+<li>Instance methods <em>– <code>new Foo().bar</code> –</em> are declared using the short <a href="#object-literals">object literal</a> syntax, <code>class Foo { bar () {} }</code></li>
+<li>Static methods <em>– <code>Foo.isPonyFoo()</code> –</em> need a <code>static</code> keyword prefix, <code>class Foo { static isPonyFoo () {} }</code></li>
+<li>Constructor method <code>class Foo { constructor () { /* initialize instance */ } }</code></li>
+<li>Prototypal inheritance with a simple syntax <code>class PonyFoo extends Foo {}</code></li>
+<li>Read <a href="https://ponyfoo.com/articles/es6-classes-in-depth" title="ES6 Classes in Depth on Pony Foo" target="_blank" rel="external">ES6 Classes in Depth</a></li>
+</ul>
+<p><sup><a href="#table-of-contents">(back to table of contents)</a></sup></p>
+<h1 id="Let-and-Const"><a href="#Let-and-Const" class="headerlink" title="Let and Const"></a>Let and Const</h1><ul>
+<li><code>let</code> and <code>const</code> are alternatives to <code>var</code> when declaring variables</li>
+<li><code>let</code> is block-scoped instead of lexically scoped to a <code>function</code></li>
+<li><code>let</code> is <a href="https://ponyfoo.com/articles/javascript-variable-hoisting" title="JavaScript Variable Hoisting on Pony Foo" target="_blank" rel="external">hoisted</a> to the top of the block, while <code>var</code> declarations are hoisted to top of the function</li>
+<li>“Temporal Dead Zone” – TDZ for short<ul>
+<li>Starts at the beginning of the block where <code>let foo</code> was declared</li>
+<li>Ends where the <code>let foo</code> statement was placed in user code <em>(hoisiting is irrelevant here)</em></li>
+<li>Attempts to access or assign to <code>foo</code> within the TDZ <em>(before the <code>let foo</code> statement is reached)</em> result in an error</li>
+<li>Helps prevent mysterious bugs when a variable is manipulated before its declaration is reached</li>
+</ul>
+</li>
+<li><code>const</code> is also block-scoped, hoisted, and constrained by TDZ semantics</li>
+<li><code>const</code> variables must be declared using an initializer, <code>const foo = &#39;bar&#39;</code></li>
+<li>Assigning to <code>const</code> after initialization fails silently (or <strong>loudly</strong> <em>– with an exception –</em> under strict mode)</li>
+<li><code>const</code> variables don’t make the assigned value immutable<ul>
+<li><code>const foo = { bar: &#39;baz&#39; }</code> means <code>foo</code> will always reference the right-hand side object</li>
+<li><code>const foo = { bar: &#39;baz&#39; }; foo.bar = &#39;boo&#39;</code> won’t throw</li>
+</ul>
+</li>
+<li>Declaration of a variable by the same name will throw</li>
+<li>Meant to fix mistakes where you reassign a variable and lose a reference that was passed along somewhere else</li>
+<li>In ES6, <strong>functions are block scoped</strong><ul>
+<li>Prevents leaking block-scoped secrets through hoisting, <code>{ let _foo = &#39;secret&#39;, bar = () =&gt; _foo; }</code></li>
+<li>Doesn’t break user code in most situations, and typically what you wanted anyways</li>
+</ul>
+</li>
+<li>Read <a href="https://ponyfoo.com/articles/es6-let-const-and-temporal-dead-zone-in-depth" title="ES6 Let, Const, and the &#39;Temporal Dead Zone&#39; (TDZ) in Depth on Pony Foo" target="_blank" rel="external">ES6 Let, Const and the “Temporal Dead Zone” (TDZ) in Depth</a></li>
+</ul>
+<p><sup><a href="#table-of-contents">(back to table of contents)</a></sup></p>
+<h1 id="Symbols"><a href="#Symbols" class="headerlink" title="Symbols"></a>Symbols</h1><ul>
+<li>A new primitive type in ES6</li>
+<li>You can create your own symbols using <code>var symbol = Symbol()</code></li>
+<li>You can add a description for debugging purposes, like <code>Symbol(&#39;ponyfoo&#39;)</code></li>
+<li>Symbols are immutable and unique. <code>Symbol()</code>, <code>Symbol()</code>, <code>Symbol(&#39;foo&#39;)</code> and <code>Symbol(&#39;foo&#39;)</code> are all different</li>
+<li>Symbols are of type <code>symbol</code>, thus: <code>typeof Symbol() === &#39;symbol&#39;</code></li>
+<li>You can also create global symbols with <code>Symbol.for(key)</code><ul>
+<li>If a symbol with the provided <code>key</code> already existed, you get that one back</li>
+<li>Otherwise, a new symbol is created, using <code>key</code> as its description as well</li>
+<li><code>Symbol.keyFor(symbol)</code> is the inverse function, taking a <code>symbol</code> and returning its <code>key</code></li>
+<li>Global symbols are <strong>as global as it gets</strong>, or <em>cross-realm</em>. Single registry used to look up these symbols across the runtime<ul>
+<li><code>window</code> context</li>
+<li><code>eval</code> context</li>
+<li><code>&lt;iframe&gt;</code> context, <code>Symbol.for(&#39;foo&#39;) === iframe.contentWindow.Symbol.for(&#39;foo&#39;)</code></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>There’s also “well-known” symbols<ul>
+<li>Not on the global registry, accessible through <code>Symbol[name]</code>, e.g: <code>Symbol.iterator</code></li>
+<li>Cross-realm, meaning <code>Symbol.iterator === iframe.contentWindow.Symbol.iterator</code></li>
+<li>Used by specification to define protocols, such as the <a href="#iterators"><em>iterable</em> protocol</a> over <code>Symbol.iterator</code></li>
+<li>They’re not <strong>actually well-known</strong> – in colloquial terms</li>
+</ul>
+</li>
+<li>Iterating over symbol properties is hard, but not impossible and definitely not private<ul>
+<li>Symbols are hidden to all pre-ES6 “reflection” methods</li>
+<li>Symbols are accessible through <code>Object.getOwnPropertySymbols</code></li>
+<li>You won’t stumble upon them but you <strong>will</strong> find them if <em>actively looking</em></li>
+</ul>
+</li>
+<li>Read <a href="https://ponyfoo.com/articles/es6-symbols-in-depth" title="ES6 Symbols in Depth on Pony Foo" target="_blank" rel="external">ES6 Symbols in Depth</a></li>
+</ul>
+<p><sup><a href="#table-of-contents">(back to table of contents)</a></sup></p>
+<h1 id="Iterators"><a href="#Iterators" class="headerlink" title="Iterators"></a>Iterators</h1><ul>
+<li>Iterator and iterable protocol define how to iterate over any object, not just arrays and array-likes</li>
+<li>A well-known <code>Symbol</code> is used to assign an iterator to any object</li>
+<li><code>var foo = { [Symbol.iterator]: iterable}</code>, or <code>foo[Symbol.iterator] = iterable</code></li>
+<li>The <code>iterable</code> is a method that returns an <code>iterator</code> object that has a <code>next</code> method</li>
+<li>The <code>next</code> method returns objects with two properties, <code>value</code> and <code>done</code><ul>
+<li>The <code>value</code> property indicates the current value in the sequence being iterated</li>
+<li>The <code>done</code> property indicates whether there are any more items to iterate</li>
+</ul>
+</li>
+<li>Objects that have a <code>[Symbol.iterator]</code> value are <em>iterable</em>, because they subscribe to the iterable protocol</li>
+<li>Some built-ins like <code>Array</code>, <code>String</code>, or <code>arguments</code> – and <code>NodeList</code> in browsers – are iterable by default in ES6</li>
+<li>Iterable objects can be looped over with <code>for..of</code>, such as <code>for (let el of document.querySelectorAll(&#39;a&#39;))</code></li>
+<li>Iterable objects can be synthesized using the spread operator, like <code>[...document.querySelectorAll(&#39;a&#39;)]</code></li>
+<li>You can also use <code>Array.from(document.querySelectorAll(&#39;a&#39;))</code> to synthesize an iterable sequence into an array</li>
+<li>Iterators are <em>lazy</em>, and those that produce an infinite sequence still can lead to valid programs</li>
+<li>Be careful not to attempt to synthesize an infinite sequence with <code>...</code> or <code>Array.from</code> as that <strong>will</strong> cause an infinite loop</li>
+<li>Read <a href="https://ponyfoo.com/articles/es6-iterators-in-depth" title="ES6 Iterators in Depth on Pony Foo" target="_blank" rel="external">ES6 Iterators in Depth</a></li>
+</ul>
+<p><sup><a href="#table-of-contents">(back to table of contents)</a></sup></p>
+<h1 id="Generators"><a href="#Generators" class="headerlink" title="Generators"></a>Generators</h1><ul>
+<li>Generator functions are a special kind of <em>iterator</em> that can be declared using the <code>function* generator () {}</code> syntax</li>
+<li>Generator functions use <code>yield</code> to emit an element sequence</li>
+<li>Generator functions can also use <code>yield*</code> to delegate to another generator function <em>– or any iterable object</em></li>
+<li>Generator functions return a generator object that adheres to both the <em>iterable</em> and <em>iterator</em> protocols<ul>
+<li>Given <code>g = generator()</code>, <code>g</code> adheres to the iterable protocol because <code>g[Symbol.iterator]</code> is a method</li>
+<li>Given <code>g = generator()</code>, <code>g</code> adheres to the iterator protocol because <code>g.next</code> is a method</li>
+<li>The iterator for a generator object <code>g</code> is the generator itself: <code>g[Symbol.iterator]() === g</code></li>
+</ul>
+</li>
+<li>Pull values using <code>Array.from(g)</code>, <code>[...g]</code>, <code>for (let item of g)</code>, or just calling <code>g.next()</code></li>
+<li>Generator function execution is suspended, remembering the last position, in four different cases<ul>
+<li>A <code>yield</code> expression returning the next value in the sequence</li>
+<li>A <code>return</code> statement returning the last value in the sequence</li>
+<li>A <code>throw</code> statement halts execution in the generator entirely</li>
+<li>Reaching the end of the generator function signals <code>{ done: true }</code></li>
+</ul>
+</li>
+<li>Once the <code>g</code> sequence has ended, <code>g.next()</code> simply returns <code>{ done: true }</code> and has no effect</li>
+<li>It’s easy to make asynchronous flows feel synchronous<ul>
+<li>Take user-provided generator function</li>
+<li>User code is suspended while asynchronous operations take place</li>
+<li>Call <code>g.next()</code>, unsuspending execution in user code</li>
+</ul>
+</li>
+<li>Read <a href="https://ponyfoo.com/articles/es6-generators-in-depth" title="ES6 Generators in Depth on Pony Foo" target="_blank" rel="external">ES6 Generators in Depth</a></li>
+</ul>
+<p><sup><a href="#table-of-contents">(back to table of contents)</a></sup></p>
+<h1 id="Promises"><a href="#Promises" class="headerlink" title="Promises"></a>Promises</h1><ul>
+<li>Follows the <a href="https://promisesaplus.com/" title="An open standard for sound, interoperable JavaScript promises" target="_blank" rel="external"><code>Promises/A+</code></a> specification, was widely implemented in the wild before ES6 was standarized <em>(e.g <a href="https://github.com/petkaantonov/bluebird" title="petkaantonov/bluebird on GitHub" target="_blank" rel="external"><code>bluebird</code></a>)</em></li>
+<li>Promises behave like a tree. Add branches with <code>p.then(handler)</code> and <code>p.catch(handler)</code></li>
+<li>Create new <code>p</code> promises with <code>new Promise((resolve, reject) =&gt; { /* resolver */ })</code><ul>
+<li>The <code>resolve(value)</code> callback will fulfill the promise with the provided <code>value</code></li>
+<li>The <code>reject(reason)</code> callback will reject <code>p</code> with a <code>reason</code> error</li>
+<li>You can call those methods asynchronously, blocking deeper branches of the promise tree</li>
+</ul>
+</li>
+<li>Each call to <code>p.then</code> and <code>p.catch</code> creates another promise that’s blocked on <code>p</code> being settled</li>
+<li>Promises start out in <em>pending</em> state and are <strong>settled</strong> when they’re either <em>fulfilled</em> or <em>rejected</em></li>
+<li>Promises can only be settled once, and then they’re settled. Settled promises unblock deeper branches</li>
+<li>You can tack as many promises as you want onto as many branches as you need</li>
+<li>Each branch will execute either <code>.then</code> handlers or <code>.catch</code> handlers, never both</li>
+<li>A <code>.then</code> callback can transform the result of the previous branch by returning a value</li>
+<li>A <code>.then</code> callback can block on another promise by returning it</li>
+<li><code>p.catch(fn).catch(fn)</code> won’t do what you want – unless what you wanted is to catch errors in the error handler</li>
+<li><a href="https://ponyfoo.com/articles/es6-promises-in-depth#using-promiseresolve-and-promisereject" target="_blank" rel="external"><code>Promise.resolve(value)</code></a> creates a promise that’s fulfilled with the provided <code>value</code></li>
+<li><a href="https://ponyfoo.com/articles/es6-promises-in-depth#using-promiseresolve-and-promisereject" target="_blank" rel="external"><code>Promise.reject(reason)</code></a> creates a promise that’s rejected with the provided <code>reason</code></li>
+<li><a href="https://ponyfoo.com/articles/es6-promises-in-depth#leveraging-promiseall-and-promiserace" target="_blank" rel="external"><code>Promise.all(...promises)</code></a> creates a promise that settles when all <code>...promises</code> are fulfilled or 1 of them is rejected</li>
+<li><a href="https://ponyfoo.com/articles/es6-promises-in-depth#leveraging-promiseall-and-promiserace" target="_blank" rel="external"><code>Promise.race(...promises)</code></a> creates a promise that settles as soon as 1 of <code>...promises</code> is settled</li>
+<li>Use <a href="http://bevacqua.github.io/promisees/" title="Promisees — Promise visualization playground for the adventurous" target="_blank" rel="external">Promisees</a> – the promise visualization playground – to better understand promises</li>
+<li>Read <a href="https://ponyfoo.com/articles/es6-promises-in-depth" title="ES6 Promises in Depth" target="_blank" rel="external">ES6 Promises in Depth</a></li>
+</ul>
+<p><sup><a href="#table-of-contents">(back to table of contents)</a></sup></p>
+<h1 id="Maps"><a href="#Maps" class="headerlink" title="Maps"></a>Maps</h1><ul>
+<li>A replacement to the common pattern of creating a hash-map using plain JavaScript objects<ul>
+<li>Avoids security issues with user-provided keys</li>
+<li>Allows keys to be arbitrary values, you can even use DOM elements or functions as the <code>key</code> to an entry</li>
+</ul>
+</li>
+<li><code>Map</code> adheres to <em><a href="#iterators">iterable</a></em> protocol</li>
+<li>Create a <code>map</code> using <code>new Map()</code></li>
+<li>Initialize a map with an <code>iterable</code> like <code>[[key1, value1], [key2, value2]]</code> in <code>new Map(iterable)</code></li>
+<li>Use <code>map.set(key, value)</code> to add entries</li>
+<li>Use <code>map.get(key)</code> to get an entry</li>
+<li>Check for a <code>key</code> using <code>map.has(key)</code></li>
+<li>Remove entries with <code>map.delete(key)</code></li>
+<li>Iterate over <code>map</code> with <code>for (let [key, value] of map)</code>, the spread operator, <code>Array.from</code>, etc</li>
+<li>Read <a href="https://ponyfoo.com/articles/es6-maps-in-depth" title="ES6 Maps in Depth on Pony Foo" target="_blank" rel="external">ES6 Maps in Depth</a></li>
+</ul>
+<p><sup><a href="#table-of-contents">(back to table of contents)</a></sup></p>
+<h1 id="WeakMaps"><a href="#WeakMaps" class="headerlink" title="WeakMaps"></a>WeakMaps</h1><ul>
+<li>Similar to <code>Map</code>, but not quite the same</li>
+<li><code>WeakMap</code> isn’t iterable, so you don’t get enumeration methods like <code>.forEach</code>, <code>.clear</code>, and others you had in <code>Map</code></li>
+<li><code>WeakMap</code> keys must be reference types. You can’t use value types like symbols, numbers, or strings as keys</li>
+<li><code>WeakMap</code> entries with a <code>key</code> that’s the only reference to the referenced variable are subject to garbage collection</li>
+<li>That last point means <code>WeakMap</code> is great at keeping around metadata for objects, while those objects are still in use</li>
+<li>You avoid memory leaks, without manual reference counting – think of <code>WeakMap</code> as <a href="https://msdn.microsoft.com/en-us/library/system.idisposable%28v=vs.110%29.aspx?f=255&amp;MSPPError=-2147217396" title="IDisposable on MSDN" target="_blank" rel="external"><code>IDisposable</code></a> in .NET</li>
+<li>Read <a href="https://ponyfoo.com/articles/es6-weakmaps-sets-and-weaksets-in-depth#es6-weakmaps" title="ES6 WeakMaps, Sets, and WeakSets in Depth on Pony Foo" target="_blank" rel="external">ES6 WeakMaps in Depth</a></li>
+</ul>
+<p><sup><a href="#table-of-contents">(back to table of contents)</a></sup></p>
+<h1 id="Sets"><a href="#Sets" class="headerlink" title="Sets"></a>Sets</h1><ul>
+<li>Similar to <code>Map</code>, but not quite the same</li>
+<li><code>Set</code> doesn’t have keys, there’s only values</li>
+<li><code>set.set(value)</code> doesn’t look right, so we have <code>set.add(value)</code> instead</li>
+<li>Sets can’t have duplicate values because the values are also used as keys</li>
+<li>Read <a href="https://ponyfoo.com/articles/es6-weakmaps-sets-and-weaksets-in-depth#es6-sets" title="ES6 WeakMaps, Sets, and WeakSets in Depth on Pony Foo" target="_blank" rel="external">ES6 Sets in Depth</a></li>
+</ul>
+<p><sup><a href="#table-of-contents">(back to table of contents)</a></sup></p>
+<h1 id="WeakSets"><a href="#WeakSets" class="headerlink" title="WeakSets"></a>WeakSets</h1><ul>
+<li><code>WeakSet</code> is sort of a cross-breed between <code>Set</code> and <code>WeakMap</code></li>
+<li>A <code>WeakSet</code> is a set that can’t be iterated and doesn’t have enumeration methods</li>
+<li><code>WeakSet</code> values must be reference types</li>
+<li><code>WeakSet</code> may be useful for a metadata table indicating whether a reference is actively in use or not</li>
+<li>Read <a href="https://ponyfoo.com/articles/es6-weakmaps-sets-and-weaksets-in-depth#es6-weaksets" title="ES6 WeakMaps, Sets, and WeakSets in Depth on Pony Foo" target="_blank" rel="external">ES6 WeakSets in Depth</a></li>
+</ul>
+<p><sup><a href="#table-of-contents">(back to table of contents)</a></sup></p>
+<h1 id="Proxies"><a href="#Proxies" class="headerlink" title="Proxies"></a>Proxies</h1><ul>
+<li>Proxies are created with <code>new Proxy(target, handler)</code>, where <code>target</code> is any object and <code>handler</code> is configuration</li>
+<li>The default behavior of a <code>proxy</code> acts as a passthrough to the underlying <code>target</code> object</li>
+<li>Handlers determine how the underlying <code>target</code> object is accessed on top of regular object property access semantics</li>
+<li>You pass off references to <code>proxy</code> and retain strict control over how <code>target</code> can be interacted with</li>
+<li>Handlers are also known as traps, these terms are used interchangeably</li>
+<li>You can create <strong>revocable</strong> proxies with <code>Proxy.revocable(target, handler)</code><ul>
+<li>That method returns an object with <code>proxy</code> and <code>revoke</code> properties</li>
+<li>You could <a href="#destructuring">destructure</a> <code>var {proxy, revoke} = Proxy.revocable(target, handler)</code> for convenience</li>
+<li>You can configure the <code>proxy</code> all the same as with <code>new Proxy(target, handler)</code></li>
+<li>After <code>revoke()</code> is called, the <code>proxy</code> will <strong>throw</strong> on <em>any operation</em>, making it convenient when you can’t trust consumers</li>
+</ul>
+</li>
+<li><a href="https://ponyfoo.com/articles/es6-proxies-in-depth#get" target="_blank" rel="external"><code>get</code></a> – traps <code>proxy.prop</code> and <code>proxy[&#39;prop&#39;]</code></li>
+<li><a href="https://ponyfoo.com/articles/es6-proxies-in-depth#set" target="_blank" rel="external"><code>set</code></a> – traps <code>proxy.prop = value</code> and <code>proxy[&#39;prop&#39;] = value</code></li>
+<li><a href="https://ponyfoo.com/articles/es6-proxy-traps-in-depth#has" target="_blank" rel="external"><code>has</code></a> – traps <code>in</code> operator</li>
+<li><a href="https://ponyfoo.com/articles/es6-proxy-traps-in-depth#deleteproperty" target="_blank" rel="external"><code>deleteProperty</code></a> – traps <code>delete</code> operator</li>
+<li><a href="https://ponyfoo.com/articles/es6-proxy-traps-in-depth#defineproperty" target="_blank" rel="external"><code>defineProperty</code></a> – traps <code>Object.defineProperty</code> and declarative alternatives</li>
+<li><a href="https://ponyfoo.com/articles/es6-proxy-traps-in-depth#enumerate" target="_blank" rel="external"><code>enumerate</code></a> – traps <code>for..in</code> loops</li>
+<li><a href="https://ponyfoo.com/articles/es6-proxy-traps-in-depth#ownkeys" target="_blank" rel="external"><code>ownKeys</code></a> – traps <code>Object.keys</code> and related methods</li>
+<li><a href="https://ponyfoo.com/articles/es6-proxy-traps-in-depth#apply" target="_blank" rel="external"><code>apply</code></a> – traps <em>function calls</em></li>
+<li><a href="https://ponyfoo.com/articles/morees6-proxy-traps-in-depth#construct" target="_blank" rel="external"><code>construct</code></a> – traps usage of the <code>new</code> operator</li>
+<li><a href="https://ponyfoo.com/articles/morees6-proxy-traps-in-depth#getprototypeof" target="_blank" rel="external"><code>getPrototypeOf</code></a> – traps internal calls to <code>[[GetPrototypeOf]]</code></li>
+<li><a href="https://ponyfoo.com/articles/morees6-proxy-traps-in-depth#setprototypeof" target="_blank" rel="external"><code>setPrototypeOf</code></a> – traps calls to <code>Object.setPrototypeOf</code></li>
+<li><a href="https://ponyfoo.com/articles/morees6-proxy-traps-in-depth#isextensible" target="_blank" rel="external"><code>isExtensible</code></a> – traps calls to <code>Object.isExtensible</code></li>
+<li><a href="https://ponyfoo.com/articles/morees6-proxy-traps-in-depth#preventextensions" target="_blank" rel="external"><code>preventExtensions</code></a> – traps calls to <code>Object.preventExtensions</code></li>
+<li><a href="https://ponyfoo.com/articles/morees6-proxy-traps-in-depth#getownpropertydescriptor" target="_blank" rel="external"><code>getOwnPropertyDescriptor</code></a> – traps calls to <code>Object.getOwnPropertyDescriptor</code></li>
+<li>Read <a href="https://ponyfoo.com/articles/es6-proxies-in-depth" title="ES6 Proxies in Depth on Pony Foo" target="_blank" rel="external">ES6 Proxies in Depth</a></li>
+<li>Read <a href="https://ponyfoo.com/articles/es6-proxy-traps-in-depth" title="ES6 Proxy Traps in Depth on Pony Foo" target="_blank" rel="external">ES6 Proxy Traps in Depth</a></li>
+<li>Read <a href="https://ponyfoo.com/articles/more-es6-proxy-traps-in-depth" title="More ES6 Proxy Traps in Depth on Pony Foo" target="_blank" rel="external">More ES6 Proxy Traps in Depth</a></li>
+</ul>
+<p><sup><a href="#table-of-contents">(back to table of contents)</a></sup></p>
+<h1 id="Reflection"><a href="#Reflection" class="headerlink" title="Reflection"></a>Reflection</h1><ul>
+<li><code>Reflection</code> is a new static built-in (think of <code>Math</code>) in ES6</li>
+<li><code>Reflection</code> methods have sensible internals, e.g <code>Reflect.defineProperty</code> returns a boolean instead of throwing</li>
+<li>There’s a <code>Reflection</code> method for each proxy trap handler, and they represent the default behavior of each trap</li>
+<li>Going forward, new reflection methods in the same vein as <code>Object.keys</code> will be placed in the <code>Reflection</code> namespace</li>
+<li>Read <a href="https://ponyfoo.com/articles/es6-reflection-in-depth" title="ES6 Reflection in Depth on Pony Foo" target="_blank" rel="external">ES6 Reflection in Depth</a></li>
+</ul>
+<p><sup><a href="#table-of-contents">(back to table of contents)</a></sup></p>
+<h1 id="Number"><a href="#Number" class="headerlink" title="Number"></a><code>Number</code></h1><ul>
+<li>Use <code>0b</code> prefix for binary, and <code>0o</code> prefix for octal integer literals</li>
+<li><code>Number.isNaN</code> and <code>Number.isFinite</code> are like their global namesakes, except that they <em>don’t</em> coerce input to <code>Number</code></li>
+<li><code>Number.parseInt</code> and <code>Number.parseFloat</code> are exactly the same as their global namesakes</li>
+<li><code>Number.isInteger</code> checks if input is a <code>Number</code> value that doesn’t have a decimal part</li>
+<li><code>Number.EPSILON</code> helps figure out negligible differences between two numbers – e.g. <code>0.1 + 0.2</code> and <code>0.3</code></li>
+<li><code>Number.MAX_SAFE_INTEGER</code> is the largest integer that can be safely and precisely represented in JavaScript</li>
+<li><code>Number.MIN_SAFE_INTEGER</code> is the smallest integer that can be safely and precisely represented in JavaScript</li>
+<li><code>Number.isSafeInteger</code> checks whether an integer is within those bounds, able to be represented safely and precisely</li>
+<li>Read <a href="https://ponyfoo.com/articles/es6-number-improvements-in-depth" title="ES6 Number Improvements in Depth on Pony Foo" target="_blank" rel="external">ES6 <code>Number</code> Improvements in Depth</a></li>
+</ul>
+<p><sup><a href="#table-of-contents">(back to table of contents)</a></sup></p>
+<h1 id="Math"><a href="#Math" class="headerlink" title="Math"></a><code>Math</code></h1><ul>
+<li><a href="https://ponyfoo.com/articles/es6-math-additions-in-depth#mathsign" target="_blank" rel="external"><code>Math.sign</code></a> – sign function of a number</li>
+<li><a href="https://ponyfoo.com/articles/es6-math-additions-in-depth#mathtrunc" target="_blank" rel="external"><code>Math.trunc</code></a> – integer part of a number</li>
+<li><a href="https://ponyfoo.com/articles/es6-math-additions-in-depth#mathcbrt" target="_blank" rel="external"><code>Math.cbrt</code></a> – cubic root of value, or <code class="md-code md-code-inline">∛‾value</code></li>
+<li><a href="https://ponyfoo.com/articles/es6-math-additions-in-depth#mathexpm1" target="_blank" rel="external"><code>Math.expm1</code></a> – <code>e</code> to the <code>value</code> minus <code>1</code>, or <code class="md-code md-code-inline">e<sup>value</sup> - 1</code></li>
+<li><a href="https://ponyfoo.com/articles/es6-math-additions-in-depth#mathlog1p" target="_blank" rel="external"><code>Math.log1p</code></a> – natural logarithm of <code>value + 1</code>, or <code class="md-code md-code-inline"><em>ln</em>(value + 1)</code></li>
+<li><a href="https://ponyfoo.com/articles/es6-math-additions-in-depth#mathlog10" target="_blank" rel="external"><code>Math.log10</code></a> – base 10 logarithm of <code>value</code>, or <code class="md-code md-code-inline"><em>log</em><sub>10</sub>(value)</code></li>
+<li><a href="https://ponyfoo.com/articles/es6-math-additions-in-depth#mathlog2" target="_blank" rel="external"><code>Math.log2</code></a> – base 2 logarithm of <code>value</code>, or <code class="md-code md-code-inline"><em>log</em><sub>2</sub>(value)</code></li>
+<li><a href="https://ponyfoo.com/articles/es6-math-additions-in-depth#mathsinh" target="_blank" rel="external"><code>Math.sinh</code></a> – hyperbolic sine of a number</li>
+<li><a href="https://ponyfoo.com/articles/es6-math-additions-in-depth#mathcosh" target="_blank" rel="external"><code>Math.cosh</code></a> – hyperbolic cosine of a number</li>
+<li><a href="https://ponyfoo.com/articles/es6-math-additions-in-depth#mathtanh" target="_blank" rel="external"><code>Math.tanh</code></a> – hyperbolic tangent of a number</li>
+<li><a href="https://ponyfoo.com/articles/es6-math-additions-in-depth#mathasinh" target="_blank" rel="external"><code>Math.asinh</code></a> – hyperbolic arc-sine of a number</li>
+<li><a href="https://ponyfoo.com/articles/es6-math-additions-in-depth#mathacosh" target="_blank" rel="external"><code>Math.acosh</code></a> – hyperbolic arc-cosine of a number</li>
+<li><a href="https://ponyfoo.com/articles/es6-math-additions-in-depth#mathatanh" target="_blank" rel="external"><code>Math.atanh</code></a> – hyperbolic arc-tangent of a number</li>
+<li><a href="https://ponyfoo.com/articles/es6-math-additions-in-depth#mathhypot" target="_blank" rel="external"><code>Math.hypot</code></a> – square root of the sum of squares</li>
+<li><a href="https://ponyfoo.com/articles/es6-math-additions-in-depth#mathclz32" target="_blank" rel="external"><code>Math.clz32</code></a> – leading zero bits in the 32-bit representation of a number</li>
+<li><a href="https://ponyfoo.com/articles/es6-math-additions-in-depth#mathimul" target="_blank" rel="external"><code>Math.imul</code></a> – <em>C-like</em> 32-bit multiplication</li>
+<li><a href="https://ponyfoo.com/articles/es6-math-additions-in-depth#mathfround" target="_blank" rel="external"><code>Math.fround</code></a> – nearest single-precision float representation of a number</li>
+<li>Read <a href="https://ponyfoo.com/articles/es6-math-additions-in-depth" title="ES6 Math Additions in Depth on Pony Foo" target="_blank" rel="external">ES6 <code>Math</code> Additions in Depth</a></li>
+</ul>
+<p><sup><a href="#table-of-contents">(back to table of contents)</a></sup></p>
+<h1 id="Array"><a href="#Array" class="headerlink" title="Array"></a><code>Array</code></h1><ul>
+<li><a href="https://ponyfoo.com/articles/es6-array-extensions-in-depth#arrayfrom" target="_blank" rel="external"><code>Array.from</code></a> – create <code>Array</code> instances from arraylike objects like <code>arguments</code> or iterables</li>
+<li><a href="https://ponyfoo.com/articles/es6-array-extensions-in-depth#arrayof" target="_blank" rel="external"><code>Array.of</code></a> – similar to <code>new Array(...items)</code>, but without special cases</li>
+<li><a href="https://ponyfoo.com/articles/es6-array-extensions-in-depth#arrayprototypecopywithin" target="_blank" rel="external"><code>Array.prototype.copyWithin</code></a> – copies a sequence of array elements into somewhere else in the array</li>
+<li><a href="https://ponyfoo.com/articles/es6-array-extensions-in-depth#arrayprototypefill" target="_blank" rel="external"><code>Array.prototype.fill</code></a> – fills all elements of an existing array with the provided value</li>
+<li><a href="https://ponyfoo.com/articles/es6-array-extensions-in-depth#arrayprototypefind" target="_blank" rel="external"><code>Array.prototype.find</code></a> – returns the first item to satisfy a callback</li>
+<li><a href="https://ponyfoo.com/articles/es6-array-extensions-in-depth#arrayprototypefindindex" target="_blank" rel="external"><code>Array.prototype.findIndex</code></a> – returns the index of the first item to satisfy a callback</li>
+<li><a href="https://ponyfoo.com/articles/es6-array-extensions-in-depth#arrayprototypekeys" target="_blank" rel="external"><code>Array.prototype.keys</code></a> – returns an iterator that yields a sequence holding the keys for the array</li>
+<li><a href="https://ponyfoo.com/articles/es6-array-extensions-in-depth#arrayprototypevalues" target="_blank" rel="external"><code>Array.prototype.values</code></a> – returns an iterator that yields a sequence holding the values for the array</li>
+<li><a href="https://ponyfoo.com/articles/es6-array-extensions-in-depth#arrayprototypeentries" target="_blank" rel="external"><code>Array.prototype.entries</code></a> – returns an iterator that yields a sequence holding key value pairs for the array</li>
+<li><a href="https://ponyfoo.com/articles/es6-array-extensions-in-depth#arrayprototype-symboliterator" target="_blank" rel="external"><code>Array.prototype[Symbol.iterator]</code></a> – exactly the same as the <a href="https://ponyfoo.com/articles/es6-array-extensions-in-depth#arrayprototypevalues" target="_blank" rel="external"><code>Array.prototype.values</code></a> method</li>
+<li>Read <a href="https://ponyfoo.com/articles/es6-array-extensions-in-depth" title="ES6 Array Extensions in Depth on Pony Foo" target="_blank" rel="external">ES6 <code>Array</code> Extensions in Depth</a></li>
+</ul>
+<p><sup><a href="#table-of-contents">(back to table of contents)</a></sup></p>
+<h1 id="Object"><a href="#Object" class="headerlink" title="Object"></a><code>Object</code></h1><ul>
+<li><a href="https://ponyfoo.com/articles/es6-object-changes-in-depth#objectassign" target="_blank" rel="external"><code>Object.assign</code></a> – recursive shallow overwrite for properties from <code>target, ...objects</code></li>
+<li><a href="https://ponyfoo.com/articles/es6-object-changes-in-depth#objectis" target="_blank" rel="external"><code>Object.is</code></a> – like using the <code>===</code> operator, but <code>true</code> for <code>NaN</code> vs <code>NaN</code>, and <code>false</code> for <code>+0</code> vs <code>-0</code></li>
+<li><a href="https://ponyfoo.com/articles/es6-object-changes-in-depth#objectgetownpropertysymbols" target="_blank" rel="external"><code>Object.getOwnPropertySymbols</code></a> – returns all own property symbols found on an object</li>
+<li><a href="https://ponyfoo.com/articles/es6-object-changes-in-depth#objectsetprototypeof" target="_blank" rel="external"><code>Object.setPrototypeOf</code></a> – changes prototype. Equivalent to <code>Object.prototype.__proto__</code> setter</li>
+<li>See also <a href="#object-literals">Object Literals</a> section</li>
+<li>Read <a href="https://ponyfoo.com/articles/es6-object-changes-in-depth" title="ES6 Object Changes in Depth on Pony Foo" target="_blank" rel="external">ES6 <code>Object</code> Changes in Depth</a></li>
+</ul>
+<p><sup><a href="#table-of-contents">(back to table of contents)</a></sup></p>
+<h1 id="Strings-and-Unicode"><a href="#Strings-and-Unicode" class="headerlink" title="Strings and Unicode"></a>Strings and Unicode</h1><ul>
+<li>String Manipulation<ul>
+<li><a href="https://ponyfoo.com/articles/es6-strings-and-unicode-in-depth#stringprototypestartswith" target="_blank" rel="external"><code>String.prototype.startsWith</code></a> – whether the string starts with <code>value</code></li>
+<li><a href="https://ponyfoo.com/articles/es6-strings-and-unicode-in-depth#stringprototypeendswith" target="_blank" rel="external"><code>String.prototype.endsWith</code></a> – whether the string ends in <code>value</code></li>
+<li><a href="https://ponyfoo.com/articles/es6-strings-and-unicode-in-depth#stringprototypeincludes" target="_blank" rel="external"><code>String.prototype.includes</code></a> – whether the string contains <code>value</code> anywhere</li>
+<li><a href="https://ponyfoo.com/articles/es6-strings-and-unicode-in-depth#stringprototyperepeat" target="_blank" rel="external"><code>String.prototype.repeat</code></a> – returns the string repeated <code>amount</code> times</li>
+<li><a href="https://ponyfoo.com/articles/es6-strings-and-unicode-in-depth#stringprototype-symboliterator" target="_blank" rel="external"><code>String.prototype[Symbol.iterator]</code></a> – lets you iterate over a sequence of unicode code points <em>(not characters)</em></li>
+</ul>
+</li>
+<li><a href="https://ponyfoo.com/articles/es6-strings-and-unicode-in-depth#unicode" target="_blank" rel="external">Unicode</a><ul>
+<li><a href="https://ponyfoo.com/articles/es6-strings-and-unicode-in-depth#stringprototypecodepointat" target="_blank" rel="external"><code>String.prototype.codePointAt</code></a> – base-10 numeric representation of a code point at a given position in string</li>
+<li><a href="https://ponyfoo.com/articles/es6-strings-and-unicode-in-depth#stringfromcodepoint`" target="_blank" rel="external"><code>String.fromCodePoint</code></a> – given <code>...codepoints</code>, returns a string made of their unicode representations</li>
+<li><a href="https://ponyfoo.com/articles/es6-strings-and-unicode-in-depth#stringprototypenormalize" target="_blank" rel="external"><code>String.prototype.normalize</code></a> – returns a normalized version of the string’s unicode representation</li>
+</ul>
+</li>
+<li>Read <a href="https://ponyfoo.com/articles/es6-strings-and-unicode-in-depth" title="ES6 Strings (and Unicode, ❤) in Depth" target="_blank" rel="external">ES6 Strings and Unicode Additions in Depth</a></li>
+</ul>
+<p><sup><a href="#table-of-contents">(back to table of contents)</a></sup></p>
+<h1 id="Modules"><a href="#Modules" class="headerlink" title="Modules"></a>Modules</h1><ul>
+<li><a href="https://ponyfoo.com/articles/es6-modules-in-depth#strict-mode" target="_blank" rel="external">Strict Mode</a> is turned on by default in the ES6 module system</li>
+<li>ES6 modules are files that <a href="https://ponyfoo.com/articles/es6-modules-in-depth#export" target="_blank" rel="external"><code>export</code></a> an API</li>
+<li><a href="https://ponyfoo.com/articles/es6-modules-in-depth#exporting-a-default-binding" target="_blank" rel="external"><code>export default value</code></a> exports a default binding</li>
+<li><a href="https://ponyfoo.com/articles/es6-modules-in-depth#named-exports" target="_blank" rel="external"><code>export var foo = &#39;bar&#39;</code></a> exports a named binding</li>
+<li>Named exports are bindings that <a href="https://ponyfoo.com/articles/es6-modules-in-depth#bindings-not-values" target="_blank" rel="external">can be changed</a> at any time from the module that’s exporting them</li>
+<li><code>export { foo, bar }</code> exports <a href="https://ponyfoo.com/articles/es6-modules-in-depth#exporting-lists" target="_blank" rel="external">a list of named exports</a></li>
+<li><code>export { foo as ponyfoo }</code> aliases the export to be referenced as <code>ponyfoo</code> instead</li>
+<li><code>export { foo as default }</code> marks the named export as the default export</li>
+<li>As <a href="https://ponyfoo.com/articles/es6-modules-in-depth#best-practices-and-export" target="_blank" rel="external">a best practice</a>, <code>export default api</code> at the end of all your modules, where <code>api</code> is an object, avoids confusion</li>
+<li>Module loading is implementation-specific, allows interoperation with CommonJS</li>
+<li><a href="https://ponyfoo.com/articles/es6-modules-in-depth#import" target="_blank" rel="external"><code>import &#39;foo&#39;</code></a> loads the <code>foo</code> module into the current module</li>
+<li><a href="https://ponyfoo.com/articles/es6-modules-in-depth#importing-default-exports" target="_blank" rel="external"><code>import foo from &#39;ponyfoo&#39;</code></a> assigns the default export of <code>ponyfoo</code> to a local <code>foo</code> variable</li>
+<li><a href="https://ponyfoo.com/articles/es6-modules-in-depth#importing-named-exports" target="_blank" rel="external"><code>import {foo, bar} from &#39;baz&#39;</code></a> imports named exports <code>foo</code> and <code>bar</code> from the <code>baz</code> module</li>
+<li><code>import {foo as bar} from &#39;baz&#39;</code> imports named export <code>foo</code> but aliased as a <code>bar</code> variable</li>
+<li><code>import {default} from &#39;foo&#39;</code> also imports the default export</li>
+<li><code>import {default as bar} from &#39;foo&#39;</code> imports the default export aliased as <code>bar</code></li>
+<li><code>import foo, {bar, baz} from &#39;foo&#39;</code> mixes default <code>foo</code> with named exports <code>bar</code> and <code>baz</code> in one declaration</li>
+<li><a href="https://ponyfoo.com/articles/es6-modules-in-depth#import-all-the-things" target="_blank" rel="external"><code>import * as foo from &#39;foo&#39;</code></a> imports the namespace object<ul>
+<li>Contains all named exports in <code>foo[name]</code></li>
+<li>Contains the default export in <code>foo.default</code>, if a default export was declared in the module</li>
+</ul>
+</li>
+<li>Read <a href="https://ponyfoo.com/articles/es6-modules-in-depth" title="ES6 Modules in Depth on Pony Foo" target="_blank" rel="external">ES6 Modules Additions in Depth</a></li>
+</ul>
+<p><sup><a href="#table-of-contents">(back to table of contents)</a></sup></p>
+<p>Time for a bullet point detox. Then again, I <em>did warn you</em> to read the <a href="https://ponyfoo.com/articles/tagged/es6-in-depth" title="ES6 in Depth on Pony Foo" target="_blank" rel="external">article series</a> instead. Don’t forget to subscribe and maybe even <a href="http://patreon.com/bevacqua" title="My Patreon Account" target="_blank" rel="external">contribute to keep Pony Foo alive</a>. Also, did you try the <a href="https://en.wikipedia.org/wiki/Konami_Code" target="_blank" rel="external">Konami code</a> just yet?</p>
+
       
 
       
@@ -258,7 +726,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="http://s.jiathis.com/qrcode.php?url=http://yoursite.com/2017/06/22/让div出现横向滚动条/" alt="微信分享二维码">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://yoursite.com/2017/06/26/bevacqua的es6/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -272,18 +740,9 @@
   
 <nav id="article-nav">
   
-    <a href="/2017/06/26/bevacqua的es6/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          (no title)
-        
-      </div>
-    </a>
   
-  
-    <a href="/2017/06/20/first/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">我的第一篇博客</div>
+    <a href="/2017/06/22/让div出现横向滚动条/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">让div出现横向滚动条</div>
       <i class="icon-circle-right"></i>
     </a>
   
